@@ -1,1 +1,25 @@
 # game
+import random
+
+player = None
+computer = random.randint(0,100)
+
+def inputs():
+    global player
+    player = int(input("give the number that you have guessed :"))
+    print()
+
+def checkwin():
+    print()
+    if player == computer:
+        print(f"you have guessed the number it was {computer}")
+        return False
+    elif player > computer:
+        print("the number is too big")
+    else:
+        print("the number is too low")
+
+while True:  
+    inputs()
+    if checkwin(): 
+        break
