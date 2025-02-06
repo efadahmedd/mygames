@@ -1,1 +1,1 @@
-in this file i will store my games that i have created with python 
+# this is a simple rock paper scissor game
